@@ -16,7 +16,7 @@ var sleep      int
 
 func main() {
     // &user 就是接收命令行中输入 -u 后面的参数值，其他同理
-    flag.StringVar(&url, "url", "http://106.12.95.32:8888/?hello=123", "请求url")
+    flag.StringVar(&url, "url", "http://127.0.0.1:8888/?hello=123", "请求url")
     flag.IntVar(&number, "n", 20, "请求协程数")
     flag.IntVar(&sleep, "s", 0, "每个协程睡眠时间")
 	// 解析命令行参数写入注册的flag里
